@@ -289,6 +289,11 @@ footer{grid-template-columns:1fr;padding:35px 20px}
 .role-switch{grid-template-columns:1fr}
 
 .page-title h1{font-size:2rem}
+}
+
+
+
+/* Admin table */
 .data-table {
     width: 100%;
     min-width: 1100px;
@@ -312,6 +317,111 @@ footer{grid-template-columns:1fr;padding:35px 20px}
     overflow-x: auto;
 }
 
+/* Tracking result card */
+#trackResult {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
 }
+
+#trackResult .complaint-card {
+    width: 100%;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+#trackResult .complaint-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+#trackResult .complaint-card-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#trackResult .progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin: 25px 0 35px;
+}
+
+#trackResult .progress-step {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+#trackResult .progress-circle {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #cbd5e1;
+    background: #fff;
+    color: #64748b;
+    font-weight: bold;
+}
+
+#trackResult .progress-step.completed .progress-circle {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+#trackResult .progress-label {
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+#trackResult .complaint-details {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+}
+
+#trackResult .complaint-details p {
+    margin: 14px 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    #trackResult .complaint-card {
+        padding: 18px;
+    }
+
+    #trackResult .progress-tracker {
+        gap: 5px;
+    }
+
+    #trackResult .progress-label {
+        font-size: 10px;
+    }
+
+    #trackResult .progress-circle {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
 
 

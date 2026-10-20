@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login | CCMS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="auth-bg">
+        <header class="navbar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">C</span>
+                <span>CCMS</span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </header>
+        <main class="auth-page">
+            <section class="auth-card">
+                <div class="auth-header">
+                    <span class="eyebrow">SECURE ACCESS</span>
+                    <h1>Welcome back</h1>
+                    <p>Choose your account type and sign in.</p>
+                </div>
+                <div class="role-switch">
+                    <button class="role active" data-role="citizen">👤 Login as Citizen</button>
+                    <button class="role" data-role="admin">🏛️ Login as Admin/Authority</button>
+                </div>
+                <div id="loginMessage">
+                </div>
+                <form id="loginForm">
+                    <input type="hidden" id="loginRole" value="citizen">
+                    <label>Email<input id="loginEmail" type="email" required placeholder="Enter email">
+                </label>
+                <label>Password<input id="loginPassword" type="password" required placeholder="Enter password">
+            </label>
+            <button class="btn btn-primary full-btn" type="submit">Login</button>
+        </form>
+        <div class="demo-box">
+            <strong>Admin demo</strong>
+            <br>Email: admin@ccms.local<br>Password: Admin@123</div>
+            <p class="auth-footer">New citizen? <a href="register.html">Create an account</a>
+        </p>
+    </section>
+</main>
+<script src="js/app.js">
+</script>
+<script>CCMS.initLogin();</script>
+</body>
+</html>

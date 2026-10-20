@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Track Complaint | CCMS</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">C</span>
+                <span>CCMS</span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="citizen-dashboard.html">Dashboard</a>
+                <a href="complaint.html">Register Complaint</a>
+            </nav>
+        </header>
+        <main class="page-container">
+            <div class="page-title center">
+                <span class="eyebrow">COMPLAINT TRACKING</span>
+                <h1>Track your complaint</h1>
+                <p>Enter your Complaint ID to view the latest progress.</p>
+            </div>
+            <section class="track-search">
+                <form id="trackForm">
+                    <input id="trackId" required placeholder="Example: CCMS1025">
+                    <button class="btn btn-primary">Track Complaint</button>
+                </form>
+            </section>
+            <div id="trackResult">
+            </div>
+        </main>
+        <script src="js/app.js">
+        </script>
+        <script>CCMS.initTrack();</script>
+    </body>
+</html>
